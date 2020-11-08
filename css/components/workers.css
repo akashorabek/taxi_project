@@ -1,0 +1,117 @@
+.workers .slick-dots {
+    display: flex;
+}
+.workers .slick-dots li {
+    margin: 10px;
+}
+.workers .slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.workers .slick-dots li.slick-active button {
+    background-color: #ffc61a;
+}
+.workers_card {
+    overflow: hidden;
+    height: 320px;
+    width: calc(100% / 5 - 3%);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 15px;
+    outline: none;
+}
+.workers_card:hover::after {
+    transform: scale(1.1);
+}
+.workers_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.6);
+    z-index: 1;
+}
+.workers_card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url(../../imgs/widgets/work1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .4s;
+}
+.workers_card.second::after {
+    background-image: url(../../imgs/widgets/work2.jpg);
+}
+.workers_card.third::after {
+    background-image: url(../../imgs/widgets/work3.jpg);
+}
+.workers_card.fourth::after {
+    background-image: url(../../imgs/widgets/work4.jpg);
+}
+.workers_card.fifth::after {
+    background-image: url(../../imgs/widgets/work5.jpg);
+}
+.workers_card.six::after {
+    background-image: url(../../imgs/widgets/work6.jpg);
+}
+
+.work_card_title {
+    z-index: 1;
+}
+.work_card_title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+.work_card_title h3 {
+    color: #ffc61a;
+    font-size: 20px;
+    font-weight: 600;
+}
+.work_card_plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+}
+.work_card_plus i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: .3s;
+    display: none;
+}
+.work_card_plus .plus.button i {
+    display: flex;
+}
+.work_card_plus i:hover {
+    color: white;
+    background-color: black;
+}
+.work_card_plus:hover.work_card_plus i {
+    display: flex;
+}
+ 

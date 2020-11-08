@@ -1,0 +1,95 @@
+.why_choose_us_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advantages {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.advantages_cards {
+    width: calc(100% / 3 - 3%);
+    
+    
+}
+.why_card {
+    margin: 30px 0;
+    padding: 8%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+}
+.card_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.card_title i {
+    font-size: 24px;
+    color: #ffc61a;
+    margin-right: 15px;
+}
+.card_title h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.why_card p {
+    line-height: 1.5;
+}
+.advantages_cards img {
+    width: 100%;
+}
+
+
+.intro_video {
+    display: flex;
+    position: relative;
+}
+.right_img {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.right_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.right_img img {
+    width: 100%;
+}
+.left_side {
+    background-color: #040038;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.left_side .main_title {
+    width: 60%;
+}
+.left_side .main_title h1 {
+    color: white;
+}
+.left_side .main_title p {
+    color: white;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+.play_btn {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    right: 41%;
+    border-radius: 50%;
+    padding: 40px 30px;
+    background-color: #ffc61a;
+}

@@ -1,0 +1,76 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.main_btn {
+    padding: 20px 30px;
+    background-color: #1f1f1f;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .3s;
+}
+.main_btn:hover {
+    color: #1f1f1f;
+    background-color: #ffc61a;
+}
+.section_paddings {
+    padding: 8% 0;
+}
+
+.main_title h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: #ffc61a;
+    position: relative;
+}
+
+.main_title h4::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -50px;
+    width: 30px;
+    height: 2px;
+    background-color: #ffc61a;
+}
+
+
+.main_title h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.news_card hr {
+   border: none;
+   height: 1px;
+   background-color: rgb(209, 209, 209);
+   margin: 30px 0;
+}
+.scrollUp {
+    height: 50px;
+    width: 50px;
+    background-color: #ffc61a;
+    transition: .3s;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.scrollUp i {
+    font-size: 20px;
+    color: white;
+}
+.scrollUp:hover {
+    background-color: #1f1f1f;
+}
+body.lock {
+    overflow: hidden;
+}
+.fixed-top {
+    display: none;
+}

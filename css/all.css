@@ -1,0 +1,16 @@
+@import url(vendor/reset.css);
+@import url(vendor/same.css);
+@import url(components/header.css);
+@import url(components/main_slider.css);
+@import url(components/yellow_section.css);
+@import url(components/about_us.css);
+@import url(components/services.css);
+@import url(components/clothes.css);
+@import url(components/mobile_app.css);
+@import url(components/why_choose_us.css);
+@import url(components/workers.css);
+@import url(components/skillset.css);
+@import url(components/reviews.css);
+@import url(components/blog.css);
+@import url(components/footer.css);
+@import url(components/adaptive.css);

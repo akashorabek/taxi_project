@@ -1,0 +1,170 @@
+.main_slider {
+    position: relative;
+    z-index: 0;
+}
+
+
+.main_slider .slick-slide.slick-active .main_slider_title h1, h3 {
+    animation: animation_title 1s forwards;
+}
+.main_slider .slick-slide.slick-active .main_slider_btns {
+    animation: animation_title 2s forwards;
+}
+.main_slider .slick-slide.slick-active.main_slider_item::after {
+    transform: scale(1.1);
+}
+@keyframes backImage {
+    to {
+        background-position: bottom;
+    }
+}
+
+@keyframes animation_title {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.main_slider .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 46%;
+    z-index: 1;
+}
+.main_slider .slick-dots li {
+    margin: 10px;
+}
+.main_slider .slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.main_slider .slick-dots li.slick-active button {
+    background-color: #ffc61a;
+}
+.main_slider_item {
+
+
+    height: 800px;
+    position: relative;
+}
+.main_slider_item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../imgs/backgrounds/taxi1.jpg);
+    background-size: cover;
+    z-index: 0;
+    transition: 15s;
+}
+.main_slider_item.second::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../imgs/backgrounds/taxi2.jpg);
+    background-size: cover;
+    z-index: 0;
+    transition: 15s;
+}
+.main_slider_item.third::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../imgs/backgrounds/taxi3.jpg);
+    background-size: cover;
+    z-index: 0;
+    transition: 15s;
+}
+.main_slider_item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 122, 137, 0.44);
+    z-index: 1;
+}
+.main_slider_title {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 14%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.main_slider_title h1 {
+    font-size: 83px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+    
+}
+.main_slider_title h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.main_slider_btns {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.main_slider_btns a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 30px 50px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.41);
+    transition: .4s;
+}
+.main_slider_btns a:hover {
+    background-color: #ffc61a;
+    color: black;
+}
+.main_slider_btns a.yellow_btn:hover {
+    background-color: transparent;
+    color: white;
+}
+.main_slider_btns a.yellow_btn {
+    border: 2px solid rgba(255, 255, 255, 0.41);
+    background-color: #ffc61a;
+    color: black;
+}
+.slick-track {
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.slick-list {
+    overflow: hidden;
+} 

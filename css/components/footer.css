@@ -1,0 +1,31 @@
+footer {
+    background-color:  #1f1f1f;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_item {
+    width: calc(100% / 4 - 10%);
+}
+.footer_item li {
+    margin-bottom: 20px;
+}
+.footer_item a {
+    color: white;
+    transition: .3s;
+}
+.footer_item a:hover {
+    color: #ffc61a;
+}
+.footer_item h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+}
+.footer_item p {
+    color: white;
+    line-height: 1.5;
+}

@@ -1,0 +1,87 @@
+.services {
+    background-color: #f8fcff;
+}
+.services_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.services_content .decoration {
+    margin-left: 50px;
+}
+.services_cards {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cards {
+    width: calc(100% / 3 - 8%);
+    padding: 5% 3%;
+    text-align: center;
+}
+.cards img {
+    width: 80px;
+    
+}
+.cards:hover img {
+    animation: img_rotate .5s forwards;
+}
+
+@keyframes img_rotate {
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-12deg);
+    }
+    60% {
+        transform: rotate(9deg); 
+    }
+    80% {
+        transform: rotate(-6deg); 
+    }
+    90% {
+        transform: rotate(3deg); 
+    }
+    100% {
+        transform: rotate(0); 
+    }
+}
+.cards h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.cards p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.cards a {
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: black;
+}
+.cards:nth-child(1) {
+    background-color: white;
+}
+.cards:nth-child(2) {
+    background-color: #1f1f1f;
+    margin-top: 5%;
+}
+.cards:nth-child(2) h2 {
+    color: white;
+}
+.cards:nth-child(2) p {
+    color: white;
+}
+.cards:nth-child(2) a {
+    color:  #ffc61a;
+}
+.cards:nth-child(3) {
+    background-color: #ffc61a;
+    margin-top: 10%;
+}

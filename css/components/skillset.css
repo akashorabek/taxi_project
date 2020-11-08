@@ -1,0 +1,142 @@
+.skillset {
+    background-color: #f8fcff;
+}
+.skillset_content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.skill_set_text {
+    margin-left: 15%;
+}
+.skillset_anim {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 30px 0;
+    border-bottom: 5px solid rgb(202, 202, 202);
+    position: relative;
+}
+.skillset_anim::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 70%;
+    height: 12px;
+    background-color: #ffc61a;
+    animation: anim_polzunok 3s forwards;
+}
+.skillset_anim.second::before {
+    width: 80%;
+    animation: anim_polzunok_80 3s forwards;
+}
+@keyframes anim_polzunok {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+@keyframes anim_polzunok_80 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+.skillset_anim h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.fleet_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    justify-content: center;
+}
+.fleet_title .main_title h4{
+    margin-left: 100px;
+}
+.cars_slider {
+    margin-top: 7%;
+}
+.car_card {
+    outline: none;
+    height: 320px;
+    margin: 0 15px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.car_card:hover::before {
+    transform: scale(1.1);
+}
+.car_card:hover::after {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.car_card:hover .main_title {
+    opacity: 1;
+    transform: translate(0px);
+}
+.car_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../../imgs/widgets/car1.jpg);
+    background-size: cover;
+    transition: .4s;
+}
+.car_card.second::before {
+    background-image: url(../../imgs/widgets/car2.jpg);
+}
+.car_card.third::before {
+    background-image: url(../../imgs/widgets/car3.jpg);
+}
+.car_card.fourth::before {
+    background-image: url(../../imgs/widgets/car4.jpg);
+}
+.car_card.fifth::before {
+    background-image: url(../../imgs/widgets/car5.jpg);
+}
+.car_card.six::before {
+    background-image: url(../../imgs/widgets/car6.jpg);
+}
+.car_card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .4s;
+    background-color: transparent;
+}
+
+.car_card .main_title {
+    padding: 10%;
+    background-color: white;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-80px);
+    transition: .4s;
+}
+.car_card .main_title h4 {
+    margin-bottom: 10px;
+}
+.car_card .main_title h1{
+    font-size: 28px;
+    cursor: pointer;
+    transition: .3s;
+}
+.car_card .main_title h1:hover {
+    color: #ffc61a;
+}

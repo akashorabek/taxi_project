@@ -1,0 +1,21 @@
+.yellow_section {
+    background-color: #ffc61a;
+}
+.yellow_section_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.yellow_section_title p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.yellow_section_title h2 {
+    font-size: 40px;
+    color: #1f1f1f;
+    font-weight: 700;
+}
